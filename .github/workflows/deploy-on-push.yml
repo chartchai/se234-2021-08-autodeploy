@@ -15,8 +15,8 @@ jobs:
           username: ${{secrets.SSH_USER_NAME}}
           port: ${{secrets.SSH_PORT}}
           key: ${{secrets.SSH_KEY}}
-          source: "./html"
-          target: "/var/www"
+          source: "./html/*"
+          target: "/var/www/html"
       #   uses: marcodallasanta/ssh-scp-deploy@v1.1.0
       #   with:
       #     host: ${{secrets.HOST}}

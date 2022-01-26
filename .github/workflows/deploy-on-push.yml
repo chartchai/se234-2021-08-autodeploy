@@ -16,4 +16,4 @@ jobs:
           port: ${{secrets.SSH_PORT}}
           key: ${{secrets.SSH_KEY}}
           local: "./html"
-          remote: "/var/www/html"
+          remote: "/var/www"

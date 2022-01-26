@@ -18,11 +18,3 @@ jobs:
           source: "./html/*"
           target: "/var/www/html"
           strip_components: 1
-      #   uses: marcodallasanta/ssh-scp-deploy@v1.1.0
-      #   with:
-      #     host: ${{secrets.HOST}}
-      #     user: ${{secrets.SSH_USER_NAME}}
-      #     port: ${{secrets.SSH_PORT}}
-      #     key: ${{secrets.SSH_KEY}}
-      #     local: "./html/*"
-      #     remote: "/var/www/html"

@@ -9,11 +9,11 @@ jobs:
       - name: check out the code to build server
         uses: actions/checkout@v2    
       - name: copy file to server
-        uses: garygrossgarten/github-action-scp@v0.7.3
+        uses: marcodallasanta/ssh-scp-deploy@v1.1.0
         with:
           host: ${{secrets.HOST}}
-          username: ${{secrets.SSH_USER_NAME}}          
+          user: ${{secrets.SSH_USER_NAME}}
           port: ${{secrets.SSH_PORT}}
-          privateKey : ${{secrets.SSH_KEY}}
+          key: ${{secrets.SSH_KEY}}
           local: "./html/*"
           remote: "/var/www/html"

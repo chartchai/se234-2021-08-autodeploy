@@ -12,8 +12,7 @@ jobs:
         uses: marcodallasanta/ssh-scp-deploy@v1.1.0
         with:
           host: ${{secrets.HOST}}
-          # user: ${{secrets.SSH_USER_NAME}}
-          user: hello
+          user: ${{secrets.SSH_USER_NAME}}          
           port: ${{secrets.SSH_PORT}}
           key: ${{secrets.SSH_KEY}}
           local: "./html/*"
